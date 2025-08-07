@@ -45,8 +45,22 @@ harías en la estructura que ya tienes? No necesitas crear un arreglo desde cero
 
 #3:
 
+$videojuego =["nombre" => ["The ", "Legend ", "of ", "Zelda "],
+    "consola" => "NES ",
+    "año" => "1986 ",
+    "precio" => "50.00 "];
+$videojuego['stock']= 10;
+echo "<br>Stock: " . $videojuego['stock'];
 
+/*El negocio crece! Han llegado más juegos y no podemos seguir usando una variable para cada uno. 
+Necesitamos una estructura que agrupe todo nuestro inventario. Además de nuestro "Zelda", hemos 
+recibido "Super Mario Bros. 3" (NES, 1988, $45.00, 15 en stock, a la venta) y "Chrono Trigger" (SNES, 
+1995, $80.00, 5 en stock, a la venta). 
+Crea una nueva variable, $inventario. Esta variable debe ser una colección que contenga la información 
+de los tres videojuegos mencionados. Cada videojuego dentro de esta colección debe mantener la 
+misma estructura detallada que definiste en las actividades anteriores.  */
 
+#4:
 
 
 ?>
