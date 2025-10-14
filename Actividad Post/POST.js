@@ -24,7 +24,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     correo: correo,
                     telefono: telefono,
                     producto: producto
-
                 })
             })
             .then(response => response.JSON())
