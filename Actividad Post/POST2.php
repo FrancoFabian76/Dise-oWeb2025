@@ -6,7 +6,7 @@ header('Access-Control-Allow-Headers: Content-Type');
 
 $input = json_decode(file_get_contents("php://input"), true);
 
-if (!$input['nombre'] || !$input['correo']){
+if (!$input['nombre'] || !$input['razon'] || !$input['correo'] || !$input['telefono'] || !$input['producto']){
     echo json_encode(["estado" => "error", "mensaje" => "Faltan campos obligatorios."]);
     exit;
 }

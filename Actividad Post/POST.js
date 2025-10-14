@@ -1,6 +1,5 @@
 window.addEventListener("DOMContentLoaded", () => {
 
-
     const boton = document.getElementById('btn');
    
     
@@ -8,11 +7,11 @@ window.addEventListener("DOMContentLoaded", () => {
         {
             e.preventDefault();
 
-
             const nombre = document.getElementById('nombre').value;
+            const razon = document.getElementById('razon').value;
             const correo = document.getElementById('correo').value;
-            
-    
+            const telefono = document.getElementById('telefono').value;
+            const producto = document.getElementById('producto').value;
     
             fetch('api/registro.php',{
                 method: 'post',
@@ -21,7 +20,11 @@ window.addEventListener("DOMContentLoaded", () => {
                 },
                 body: JSON.stringify({
                     nombre: nombre,
-                    correo: correo
+                    razon: razon,
+                    correo: correo,
+                    telefono: telefono,
+                    producto: producto
+
                 })
             })
             .then(response => response.JSON())
@@ -31,11 +34,6 @@ window.addEventListener("DOMContentLoaded", () => {
             .catch(error => console.log('error:', error));
     
         });
-    
-    
-    
-
-
 });
 
 
