@@ -26,7 +26,7 @@ window.addEventListener("DOMContentLoaded", () => {
                     producto: producto
                 })
             })
-            .then(response => response.JSON())
+            .then(response => response.json())
             .then(data => {
                 console.log('respuesta del servidor:', data);
             })
