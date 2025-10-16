@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
         const telefono = document.getElementById('telefono').value;
         const producto = document.getElementById('producto').value;
 
-        fetch('http://localhost/api/registro.php', {
+        fetch('http://localhost/api/POST2.php', {
             method: 'post',
             headers: {
                 'Content-Type': 'application/json'
