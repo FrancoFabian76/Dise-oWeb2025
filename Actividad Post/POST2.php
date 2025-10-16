@@ -19,9 +19,7 @@ if (!filter_var($input["correo"], FILTER_VALIDATE_EMAIL)){
     echo json_encode(["estado" => "error", "mensaje" => "Correo invalido."]);
     exit;
 }
-
 echo json_encode(["estado"=> "ok", 
 "mensaje" => "Usuario Registrado Correctamente.",
 "usuario" => $input
 ]);
-?>

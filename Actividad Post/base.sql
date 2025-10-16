@@ -1,8 +1,7 @@
-CREATE TABLE Empresa (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    Nombre VARCHAR(255) NOT NULL,
-    RazonSocial VARCHAR(255) NOT NULL,
-    CorreoElectronico VARCHAR(255) NOT NULL,
-    Telefono VARCHAR(20),
-    TipoProducto VARCHAR(255)
+create table usuarios(
+    id int primary key auto_increment,
+    nombre varchar(100) not null,
+    email varchar(100) not null,
+    telefono varchar(15) not null,
+    producto varchar(100) not null
 );
